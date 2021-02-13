@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>[Windows]Office_2016_2019_365转换VOL</title>
+      <link href="2020/12/18/windows-office-2016-2019-365-zhuan-huan-vol/"/>
+      <url>2020/12/18/windows-office-2016-2019-365-zhuan-huan-vol/</url>
+      
+        <content type="html"><![CDATA[<h2 id="介绍及使用"><a href="#介绍及使用" class="headerlink" title="介绍及使用"></a>介绍及使用</h2><ul><li>该脚本用于转换C2R产品（Office2016/ 2019 / O365）到VOL版本。</li><li>请用右键管理员运行，批处理会清除当前所有证书并根据对应产品ID导入VOL证书。</li><li>Mondo证书覆盖所有产品，因此O365默认会安装Mondo证书，安装后会显示2016 Mondo，但它仍然是Office 365并具有Office 365的特性。而Professional默认会安装ProPlus证书。其他产品ID会安装对应产品证书。</li><li>Windows7和8.1被微软禁止安装Office2019，可以安装O365并编辑脚本_O365asO2019=1即可。</li></ul><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>原文地址：<a href="https://github.com/kkkgo/office-C2R-to-VOL">Github</a><br>备用地址：<a href="https://wwe.lanzous.com/itfYkjhoo2b">蓝奏云</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cmd </tag>
+            
+            <tag> office </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>[Ubuntu]命令方式安装中文语言包</title>
+      <link href="2020/12/18/ubuntu-ming-ling-fang-shi-an-zhuang-zhong-wen-yu-yan-bao/"/>
+      <url>2020/12/18/ubuntu-ming-ling-fang-shi-an-zhuang-zhong-wen-yu-yan-bao/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Ubuntu中文语言包包含以下内容"><a href="#Ubuntu中文语言包包含以下内容" class="headerlink" title="Ubuntu中文语言包包含以下内容"></a>Ubuntu中文语言包包含以下内容</h2><blockquote><p>language-pack-zh-hans 简体中文<br>language-pack-zh-hans-base<br>language-pack-zh-hant 繁体中文<br>language-pack-zh-hant-base</p></blockquote><h2 id="检查系统更新"><a href="#检查系统更新" class="headerlink" title="检查系统更新"></a>检查系统更新</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> apt update</code></pre><h2 id="安装中文语言包"><a href="#安装中文语言包" class="headerlink" title="安装中文语言包"></a>安装中文语言包</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">apt-get</span> <span class="token function">install</span>  language-pack-zh-han*</code></pre><h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>使用自己习惯的编辑器修改如下配置文件，本文使用<code>vim</code></p><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/default/locale</code></pre><p>将原始内容全部注释或者删除，替换为以下内容</p><blockquote><p>LANG=”zh_CN.UTF-8”<br>LANGUAGE=”zh_CN:zh”<br>LC_NUMERIC=”zh_CN”<br>LC_TIME=”zh_CN”<br>LC_MONETARY=”zh_CN”<br>LC_PAPER=”zh_CN”<br>LC_NAME=”zh_CN”<br>LC_ADDRESS=”zh_CN”<br>LC_TELEPHONE=”zh_CN”<br>LC_MEASUREMENT=”zh_CN”<br>LC_IDENTIFICATION=”zh_CN”<br>LC_ALL=”zh_CN.UTF-8”</p></blockquote><h2 id="修改环境文件-环境变量-当前用户"><a href="#修改环境文件-环境变量-当前用户" class="headerlink" title="修改环境文件(环境变量(当前用户))"></a>修改环境文件(环境变量(当前用户))</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/environment</code></pre><p>不修改原有内容,直接在原内容下面新开一行加入下列内容</p><blockquote><p>LANG=”zh_CN.UTF-8”<br>LANGUAGE=”zh_CN:zh”<br>LC_NUMERIC=”zh_CN”<br>LC_TIME=”zh_CN”<br>LC_MONETARY=”zh_CN”<br>LC_PAPER=”zh_CN”<br>LC_NAME=”zh_CN”<br>LC_ADDRESS=”zh_CN”<br>LC_TELEPHONE=”zh_CN”<br>LC_MEASUREMENT=”zh_CN”<br>LC_IDENTIFICATION=”zh_CN”<br>LC_ALL=”zh_CN.UTF-8”</p></blockquote><h2 id="修改环境文件-环境变量-所有用户"><a href="#修改环境文件-环境变量-所有用户" class="headerlink" title="修改环境文件(环境变量(所有用户))"></a>修改环境文件(环境变量(所有用户))</h2><pre class=" language-bash"><code class="language-bash"><span class="token function">sudo</span> vim /etc/profile</code></pre><blockquote><p>LANG=”zh_CN.UTF-8”</p></blockquote><h2 id="重启"><a href="#重启" class="headerlink" title="重启"></a>重启</h2><p>最后重启即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Linux </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> linux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>[Winddows]使用KMS VL ALL激活系统</title>
+      <link href="2020/12/17/windows-shi-yong-kms-vl-all-ji-huo-xi-tong/"/>
+      <url>2020/12/17/windows-shi-yong-kms-vl-all-ji-huo-xi-tong/</url>
+      
+        <content type="html"><![CDATA[<h1 id="KMS-VL-ALL-一个精巧灵活的激活批处理"><a href="#KMS-VL-ALL-一个精巧灵活的激活批处理" class="headerlink" title="KMS_VL_ALL - 一个精巧灵活的激活批处理"></a>KMS_VL_ALL - 一个精巧灵活的激活批处理</h1><blockquote><p>准备：把KMS_VL_ALL目录放到合适的位置（无特殊字符的路径），删除或卸载其他相关KMS软件，退出杀毒软件。<br>零售版office需要经过<a href="https://github.com/kkkgo/office-C2R-to-VOL">转换</a>成VL后才能使用KMS激活。<br>*注意：由于微软的限制，对于BIOS具有SLIC的品牌机，可能无法使用KMS激活Window7系统。<a href="https://github.com/kkkgo/KMS_VL_ALL#supported-volume-products">支持的产品</a></p></blockquote><h2 id="使用一次性的KMS手动续期激活（系统不会增加任何文件）"><a href="#使用一次性的KMS手动续期激活（系统不会增加任何文件）" class="headerlink" title="使用一次性的KMS手动续期激活（系统不会增加任何文件）"></a>使用一次性的KMS手动续期激活（系统不会增加任何文件）</h2><p>如果你不需要自动续期，可以直接右键管理员运行<strong>Activate.cmd</strong>即可。<br>你必须在KMS到期（默认是180天）前再次运行一次。 </p><blockquote><p>Activate.cmd是一个自动激活本机所有批量产品的批处理。<br>它可以单独使用，如果你想用第三方的KMS服务器的话，可以编辑设置External值为1，并填上IP（或者域名）和port（默认1688）。  </p></blockquote><h2 id="安装自动续期的KMS激活（系统会增加计划任务和必要的hook）"><a href="#安装自动续期的KMS激活（系统会增加计划任务和必要的hook）" class="headerlink" title="安装自动续期的KMS激活（系统会增加计划任务和必要的hook）"></a>安装自动续期的KMS激活（系统会增加计划任务和必要的hook）</h2><ul><li>1、先右键管理员运行脚本<strong>AutoRenewal-Setup.cmd</strong>，这是一个带有KMS服务器的hook，会劫持系统的KMS组件，请让杀毒软件放行，输入y安装；如果你需要卸载，只需要再次运行他，输入y卸载。如果您使用防病毒软件，最好从扫描保护中排除此文件：</li></ul><p> <strong>C:\Windows\System32\SppExtComObjHook.dll</strong></p><ul><li>2、运行<strong>Activate.cmd</strong>即可<blockquote><p>不管你是用哪种方式激活，如果你安装了新的产品，你仍至少需要运行一次<strong>Activate.cmd</strong>来处理产品激活。</p></blockquote></li></ul><h2 id="其他文件"><a href="#其他文件" class="headerlink" title="其他文件"></a>其他文件</h2><ul><li><strong>Check-Activation-Status.cmd</strong> 是检查激活状态的脚本（使用VBS）。  </li><li><strong>Check-Activation-Status-Alternative.cmd</strong> 是检查激活状态的脚本（使用WMI）。  </li><li><strong>$OEM$</strong> 是用于封装系统部署自动激活的文件夹。</li></ul><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>推荐地址：<a href="https://github.com/kkkgo/KMS_VL_ALL">GitHub</a><br>备用地址：<a href="https://wwe.lanzous.com/iJsHFjgjvje">蓝奏云</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cmd </tag>
+            
+            <tag> kms </tag>
+            
+            <tag> windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
